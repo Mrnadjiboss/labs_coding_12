@@ -18,7 +18,7 @@ class CreateServicesTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->unsignedBigInteger('icon_id');
-            $table->foreign('icon_id')->references('id')->on('icons')->onDelete('cascade');
+            // $table->foreign('icon_id')->references('id')->on('icons')->onDelete('cascade');
             $table->timestamps();
         });
     }
