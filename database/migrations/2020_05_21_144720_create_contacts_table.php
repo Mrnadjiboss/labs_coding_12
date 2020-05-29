@@ -22,7 +22,7 @@ class CreateContactsTable extends Migration
             $table->string('phone');
             $table->string('adresse');
             $table->string('localite');
-            $table->timestamps();
+            $table->timestamps();               
         });
     }
 

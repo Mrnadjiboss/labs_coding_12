@@ -20,10 +20,15 @@ class CategorieTableSeeder extends Seeder {
             'name' => 'Sport',
         ] );
         DB::table( 'categories' )->insert( [
-            'name' => 'Politique',
-        ] );
-        DB::table( 'categories' )->insert( [
             'name' => 'Animaux',
+        ] ); 
+        
+        // DB::table( 'categories' )->insert( [
+        //     'name' => 'Animaux',  
+        // ] );
+
+        DB::table( 'categories' )->insert( [      
+            'name' => 'Politique',
         ] );
         DB::table( 'categories' )->insert( [
             'name' => 'Business',

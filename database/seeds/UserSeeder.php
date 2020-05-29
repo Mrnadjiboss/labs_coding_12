@@ -11,40 +11,51 @@ class UserSeeder extends Seeder {
     */
 
     public function run() {
+
+
+
+
         DB::table( 'users' )->insert( [
             'name' => 'The Labs',
             'email' => 'projet12codingschool@gmail.com',
             'password' => bcrypt( 'projet.codingschool@gmail.com' ),
             'role_id' => 1,
             'created_at' => now()
+            
         ] );
+
+
         DB::table( 'users' )->insert( [
-            'name'=> 'Lore Williams',
-            'email'=> 'adam@example.com',
-            'password'=> bcrypt( 'adam@example.com' ),
+            'name'=> 'thor odinson',
+            'email'=> 'thor@example.com',
+            'password'=> bcrypt( 'thor@example.com' ),
             'role_id' => 2,
             'img'=>'/img/avatar/03.jpg',
             'description'=>'Vivamus in urna eu enim porttitor consequat. Proin vitae pulvinar libero. Proin ut hendrerit metus. Aliquam erat volutpat. Donec fermen tum convallis ante eget tristique.',
             'created_at' => now()
         ] );
         DB::table( 'users' )->insert( [
-            'name'=> 'Michael Smith',
+            'name'=> 'will Smith',
             'email'=> 'membre@example.com',
             'password'=> bcrypt( 'membre@example.com' ),
             'role_id' => 4,
             'img'=>'/img/avatar/01.jpg',
             'created_at' => now()
         ] );
+
+
         DB::table( 'users' )->insert( [
-            'name'=> 'Michael Smith',
+            'name'=> 'jaden Smith',
             'email'=> 'member@example.com',
             'password'=> bcrypt( 'member@example.com' ),
             'role_id' => 4,
             'img'=>'/img/avatar/03.jpg',
             'created_at' => now()
         ] );
+
+
         DB::table( 'users' )->insert( [
-            'name'=> 'Adams elo',
+            'name'=> 'tony stark',
             'email'=> 'test@example.com',
             'password'=> bcrypt( 'test@example.com' ),
             'role_id' => 3,
