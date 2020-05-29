@@ -159,6 +159,8 @@ class IconTableSeeder extends Seeder
             "icon" =>"flaticon-037-idea",
             "created_at" => now(),           
         ]);
+
+        
         DB::table('icons')->insert([
             "icon" =>"flaticon-038-graphic-tool-1",
             "created_at" => now(),           
@@ -166,6 +168,7 @@ class IconTableSeeder extends Seeder
             "icon" =>"flaticon-039-vector",
             "created_at" => now(),           
         ]);
+
         DB::table('icons')->insert([
             "icon" =>"flaticon-040-rgb",
             "created_at" => now(),           

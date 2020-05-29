@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Nav_link extends Model
+class user1 extends Model
 {
     //
 }

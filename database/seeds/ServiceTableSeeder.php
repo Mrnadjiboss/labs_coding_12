@@ -17,8 +17,10 @@ class ServiceTableSeeder extends Seeder
             "description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla.",
             "created_at" => now(),
             ]);
+
         DB::table('services')->insert([
             "icon_id" =>11,
+            
             "title"=>"Projects online",
             "description"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo est, feugiat nec elementum id, suscipit id nulla.",
             "created_at" => now(),
