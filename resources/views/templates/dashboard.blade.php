@@ -233,15 +233,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="/assets/js/mdb.min.js"></script>
     <script>
-        // function openNav() {
-        // document.getElementById("mySidebar").style.width = "250px";
-        // document.getElementById("main").style.marginLeft = "250px";
-        // }
-
-        // function closeNav() {
-        // document.getElementById("mySidebar").style.width = "0";
-        // document.getElementById("main").style.marginLeft= "0";
-        // }
+        
         $(document).ready(() => {
 				// SideNav Button Initialization
 				$(".button-collapse").sideNav();

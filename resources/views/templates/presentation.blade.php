@@ -1,6 +1,6 @@
         <!-- About contant -->
         <div class="about-contant">
-            <div class="container">
+            <div class="container bg-light">
                 <div class="section-title">
                     <?php
                         $test = preg_match('#\((.*?)\)#', $titre->presentation, $match);

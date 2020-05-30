@@ -11,7 +11,7 @@
                     $titre->serviceprim = str_replace($word, "<span>$mot</span>", $titre->serviceprim);
                     }
                 ?>
-				<h2>{!!$titre->serviceprim!!}</h2>
+				<h2 class="h1 text-warning bg-dark">{!!$titre->serviceprim!!}</h2>
 			</div>
 			<div class="row">
 				<!-- feature item -->

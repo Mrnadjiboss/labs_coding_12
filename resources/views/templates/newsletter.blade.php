@@ -1,6 +1,6 @@
 	<!-- newsletter section -->
 	<div class="newsletter-section spad" id="newsletter">
-		<div class="container">
+		<div class="container bg-light">
 			<div class="row">
 				@if ($errors->any())
 				<div class='alert alert-danger'>
