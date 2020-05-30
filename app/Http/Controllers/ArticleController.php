@@ -27,7 +27,7 @@ class ArticleController extends Controller {
         $articles = Article::all();
         $menus = Menu::first();
         $logo = Logo::first();
-        return view( 'backoffice.article', compact( 'menus', 'logo', 'articles', ) );
+        return view( 'backoffice.article', compact( 'menus', 'logo', 'articles'));
     }
 
     /**
@@ -41,7 +41,7 @@ class ArticleController extends Controller {
         $categories = Categorie::all();
         $menus = Menu::first();
         $logo = Logo::first();
-        return view( 'create.article', compact( 'menus', 'logo', 'tags', 'categories' ) );
+        return view( 'create.article', compact( 'categories' , 'menus', 'logo', 'tags') );
     }
 
     /**
@@ -52,6 +52,7 @@ class ArticleController extends Controller {
     */
 
     public function store( Request $request ) {
+
         $request->validate( [
             'img'=>'required',
             'text'=>'required',
@@ -71,6 +72,7 @@ class ArticleController extends Controller {
         $newName = Storage::disk( 'public' )->put( '', $img );
         $article = new Article();
         $article->img_article = $newName;
+
         $thumbnailpath = public_path( 'storage/'.$article->img_article );
         $imgde = Image::make( $thumbnailpath )->resize( 755, 270 );
         $imgde->save( $thumbnailpath );
@@ -87,8 +89,13 @@ class ArticleController extends Controller {
             $article->accept = 'unchecked';
         }
         $article->user_id = Auth::id();
+
+
+
         $article->save();
         $article->categories()->attach( $request->cate );
+
+
         $article->tags()->attach( $request->tags );
         if (Auth::user()->role_id == 2) {
             if (isset( $_POST['test'] )) {
@@ -107,7 +114,10 @@ class ArticleController extends Controller {
     */
 
     public function show( Article $article ) {
-        //
+        // $tags = Tag::all();
+        // $categories = Categorie::all();
+        // $menus = Menu::first();
+        // $logo = Logo::first();
     }
 
     /**
@@ -173,6 +183,7 @@ class ArticleController extends Controller {
     */
 
     public function destroy( Article $article ) {
+
         Storage::disk( 'public' )->delete( $article->img_article );
         $article->delete();
         return redirect()->back();
