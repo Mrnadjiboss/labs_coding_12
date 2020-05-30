@@ -8,11 +8,13 @@
 @section('content')
 <br>
 <br>
+    
 <br>
 <br>
+<br> 
+  
 <br>
-<br>
-<hr class="bg-secondary">
+<hr class="bg-secondary">  
 <hr>
 <br>
 <br>
@@ -26,6 +28,7 @@
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
+
                     @endif
                     <h2>hello {{Auth::user()->name}} , Welcome</h2>
                     
@@ -36,9 +39,10 @@
 </div>
 <br>
 <br>
+<br>  
 <br>
 <br>
-<br><br>
+<br>
 <br>
 <br>
 <br>
