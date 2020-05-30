@@ -1,6 +1,8 @@
 <?php
 
 use App\Menu;
+// use App\user11;
+// use App\user1;
 use App\Logo;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -26,8 +28,7 @@ Auth::routes();
 Route::get('/profil', 'HomeController@index')->name('home');
 
 Route::get('/admin', function () {
-    
-    return view('backoffice.user1',compact('menus'));
+      return view('backoffice.user1',compact('menus'));
 });
 
 // Route::get('/welcome', function () {
