@@ -86,6 +86,7 @@ class PageController extends Controller {
     public function contact() {
         $contact = Contact::first();
         $titre = Titre::first();
+        
         $footer = Footer::first();
         $logo = Logo::first();
         $menus = Menu::first();
