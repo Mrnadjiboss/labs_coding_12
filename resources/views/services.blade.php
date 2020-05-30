@@ -9,15 +9,27 @@
 @endsection
 
 @section('banner')
-    @include('templates.banner3')
+    @include('templates.banner')
 @endsection
 
-@section('googlemaps')
-    @include('templates.googlemaps')
+@section('services')
+    @include('templates.services')
+@endsection
+
+@section('servicesprime')
+    @include('templates.servicesprime')
+@endsection
+
+@section('blograpide')
+    @include('templates.blograpide')
+@endsection
+
+@section('newsletter')
+    @include('templates.newsletter')
 @endsection
 
 @section('contact')
-    @include('templates.contact')
+   @include('templates.contact')
 @endsection
 
 @section('footer')
