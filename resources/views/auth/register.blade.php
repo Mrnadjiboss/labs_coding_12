@@ -8,7 +8,8 @@
 @section('content')
 <br>
 <br>
-<br>
+<hr class="bg-warning">
+<hr class="bg-warning">
 <br>
 <br>
 <div class="container mt-3">
