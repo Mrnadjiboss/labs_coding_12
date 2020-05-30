@@ -26,8 +26,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 
-class HtmlController extends Controller {
-    public function home() {
+class PageController extends Controller {
+    public function acceuil() {
         $menus = Menu::first();
         $footer = Footer::first();
         $testimonials = Testimonial::all();
@@ -70,6 +70,9 @@ class HtmlController extends Controller {
         return view( 'blog', compact( 'menus', 'logo', 'articles', 'tags', 'categories', 'footer','search' ) );
     }
 
+
+
+
     public function blogpost( $id ) {
         $footer = Footer::first();
         $article = Article::find( $id );
@@ -77,6 +80,8 @@ class HtmlController extends Controller {
         $menus = Menu::first();
         return view( 'blog-post', compact( 'menus', 'logo', 'article', 'footer' ) );
     }
+
+
 
     public function contact() {
         $contact = Contact::first();
