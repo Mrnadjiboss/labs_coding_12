@@ -19,27 +19,27 @@
                                 <div class="md-form mb-0">
                                     <input type="text" id="email" name="name"
                                         class="form-control">
-                                    <label for="email">Nom </label>
+                                    <label for="email">name </label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="email" name="prename"
                                         class="form-control">
-                                    <label for="email">Prénom </label>
+                                    <label for="email">last name </label>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
                                     <input type="text" id="email" name="fonction"
                                         class="form-control">
-                                    <label for="email">Fonction </label>
+                                    <label for="email">Function </label>
                                 </div>
                             </div>
                             <!-- Collapse buttons -->
                     <div>
                         <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Cliquez ici si vous voulez changer l'image
+                        Click here if you wanna change the image
                         </a>
                     </div>
                     <!-- / Collapse buttons -->
@@ -56,7 +56,7 @@
                     </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Creer</button>
+                            <button type="submit" class="btn blue-gradient text-center">Create</button>
                         </div>
                     </form>
                 </div>

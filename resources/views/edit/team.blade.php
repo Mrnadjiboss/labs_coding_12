@@ -20,14 +20,14 @@
                                 <div class="md-form mb-0">
                                     <input value="{{$team->name}}" type="text" id="email" name="name"
                                         class="form-control">
-                                    <label for="email">Nom </label>
+                                    <label for="email">Name </label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" value="{{$team->prename}}" id="email" name="prename"
                                         class="form-control">
-                                    <label for="email">Prénom </label>
+                                    <label for="email">last name </label>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -39,11 +39,11 @@
                             </div>
                              <!-- Collapse buttons -->
                             <div>
-                                <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                Cliquez ici si vous voulez changer l'image
+                                <a class="btn btn-lg btn-outlin-light aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    Click here if you wanna change the image
                                 </a>
                             </div>
-                            <!-- / Collapse buttons -->
+                           
                             
                             <!-- Collapsible element -->
                             <div class="collapse" id="collapseExample">
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Editer</button>
+                            <button type="submit" class="btn blue-gradient text-center">Edit</button>
                         </div>
                     </form>
                 </div>

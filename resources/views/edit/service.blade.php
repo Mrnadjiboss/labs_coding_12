@@ -27,11 +27,11 @@
                                     <div class="container mt-2">
                                         <div class="row d-flex">
                                             <div class="col-6 d-flex flex-column align-items-center">
-                                                <h4>Icone actuelle</h4>
+                                                <h4> actual Icon</h4>
                                                 <i class="fa-5x {{$service->icon->icon}}"></i>
                                             </div>
                                             <div class="col-6 d-flex flex-column align-items-center">
-                                                <h4>Icone choisie</h4>
+                                                <h4> chosen Icon</h4>
                                                 <div id="titre" style="font-size:80px;"></div>
                                             </div>
                                         </div>
@@ -46,15 +46,26 @@
                                     <label for="form10">Description</label>
                                   </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Editer</button>
-                        </div>
-                    </form>
                 </div>
+                <div class="text-center">
+                <button type="submit" class="btn blue-gradient text-center">Edit</button>
+                </div>
+            </form>
+            </div>
             </div>
         </section>
     </div>
+
+
+
+
+
+
+
+
+
+
+    
     <script type="text/javascript">    
         function afficher(X) {
         I = X.selectedIndex ;        

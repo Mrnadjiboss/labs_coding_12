@@ -15,7 +15,7 @@
                     <!-- Collapse buttons -->
                     <div>
                         <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Cliquez ici si vous voulez changer l'image
+                        Click here if you wanna change the image
                         </a>
                     </div>
                     <!-- / Collapse buttons -->

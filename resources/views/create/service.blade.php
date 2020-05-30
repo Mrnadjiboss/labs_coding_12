@@ -30,7 +30,7 @@
                                         @endforeach
                                     </select>
                                     <div class="text-center">
-                                        <div id="titre" style="font-size:80px;"></div>
+                                        <div id="titre" style="font-size:100px;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Creer</button>
+                            <button type="submit" class="btn blue-gradient text-center">Create</button>
                         </div>
                     </form>
                 </div>

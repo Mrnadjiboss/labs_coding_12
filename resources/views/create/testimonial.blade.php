@@ -5,7 +5,7 @@
         <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Testimonials</h2>
         <div class="row">
 
-            <!--Grid column-->
+            
             <div class="col-md-12 mb-md-0 mb-5">
                 @if ($errors->any())
                 <div class='alert alert-danger text-center'>
@@ -24,20 +24,20 @@
                         <div class="col-md-4">
                             <div class="md-form mb-0">
                                 <input type="text" id="email" name="name" class="form-control">
-                                <label for="email" class="">Nom</label>
+                                <label for="email" class="">Name</label>
                             </div>
                         </div>
                         <div class=" col-md-4">
                             <div class="md-form mb-0">
                                 <input type="text" id="email" name="prename" class="form-control">
-                                <label for="email" class="">Prénom</label>
+                                <label for="email" class="">last name</label>
                             </div>
                         </div>
 
                         <div class=" col-md-4">
                             <div class="md-form mb-0">
                                 <input type="text" id="email" name="fonction" class="form-control">
-                                <label for="email" class="">Fonction</label>
+                                <label for="email" class="">Function</label>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -53,11 +53,6 @@
                         <!--Grid column-->
 
                     </div>
-                    <!--Grid row-->
-
-
-                    <!--Grid row-->
-
                     
                     <!-- Collapsible element -->
                             <div class="col-12">
@@ -70,7 +65,7 @@
                     
                     <!-- Grid column -->
                     <div class="text-center">
-                        <button type="submit" class="btn blue-gradient text-center">Creer</button>
+                        <button type="submit" class="btn blue-gradient text-center">Create</button>
                     </div>
                     <div class="status"></div>
                 </form>

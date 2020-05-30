@@ -41,7 +41,7 @@
                     
                     <!-- Grid column -->
                     <div class="text-center">
-                        <button type="submit" class="btn blue-gradient text-center">Creer</button>
+                        <button type="submit" class="btn blue-gradient text-center">Create</button>
                     </div>
                     <div class="status"></div>
                 </form>

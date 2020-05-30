@@ -1,6 +1,6 @@
 @extends('templates.dashboard')
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid bg-light">
         <section class="section card mb-5">
             <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Edit article</h2>
             <p class="text-center">Auteur : {{$article->user->name}}</p>
@@ -129,7 +129,7 @@
                             </div>
                             <div>
                                 <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                Cliquez ici si vous voulez changer l'image
+                                Click here if you wanna change the image
                                 </a>
                             </div>
                             <!-- / Collapse buttons -->
@@ -146,7 +146,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Editer</button>
+                            <button type="submit" class="btn blue-gradient text-center">Edit</button>
                         </div>
                     </form>
                 </div>

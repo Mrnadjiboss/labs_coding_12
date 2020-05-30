@@ -1,34 +1,33 @@
 @extends('templates.dashboard')
+
 @section('content')
-<div class="container-fluid">
+<div class="container-fluid bg-light">
     <section class="section card mb-5">
         <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Testimonials</h2>
         <div class="row">
-
-            <!--Grid column-->
             <div class="col-md-12 mb-md-0 mb-5">
                 <form id="contact-form" class="container"
                 action='{{ route('testimonial.update',$testimonial->id) }}' method="POST" enctype="multipart/form-data" >
                     @csrf
                     @method('put')
-                    <!--Grid row-->
+                
                     <div class="row">
                         
                         <!--Grid column-->
                         <div class="col-md-4">
                             <div class="md-form mb-0">
                                 <input type="text" value="{{$testimonial->name}}" id="email" name="name" class="form-control">
-                                <label for="email" class="">Nom</label>
+                                <label for="email" class="">Name</label>
                             </div>
                         </div>
                         <div class=" col-md-4">
                             <div class="md-form mb-0">
                                 <input type="text" value="{{$testimonial->prename}}" id="email" name="prename" class="form-control">
-                                <label for="email" class="">Prénom</label>
+                                <label for="email" class="">last name</label>
                             </div>
                         </div>
 
-                        <div class=" col-md-4">
+                        <div class=" col-md-5">
                             <div class="md-form mb-0">
                                 <input type="text" value="{{$testimonial->fonction}}" id="email" name="fonction" class="form-control">
                                 <label for="email" class="">Fonction</label>

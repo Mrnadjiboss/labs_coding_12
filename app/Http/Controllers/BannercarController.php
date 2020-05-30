@@ -49,7 +49,7 @@ class BannercarController extends Controller
         $request->validate( [
             'img'=>'required',
             ], [
-            'img.required'=>'veuillez selectionner une image.',
+            'img.required'=>'please select an image.',
             ] );
             $img = $request->file( 'img' );
             $newName = Storage::disk( 'public' )->put( '', $img );
