@@ -12,13 +12,13 @@ class TeamTableSeeder extends Seeder {
     public function run() {
         DB::table( 'teams' )->insert( [
             'name' => 'Williams',
-            'prename' => 'Christinne',
+            'last_name' => 'Christinne',
             'img' => '/img/team/1.jpg',
             'fonction' => 'Project manager',
         ] );
         DB::table( 'teams' )->insert( [
             'name' => 'Williams',
-            'prename' => 'Christinne',
+            'last_name' => 'Christinne',
             'img' => '/img/team/2.jpg',
             'fonction' => 'Digital Designer',
         ] );

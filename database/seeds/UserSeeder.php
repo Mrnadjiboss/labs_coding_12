@@ -11,18 +11,18 @@ class UserSeeder extends Seeder {
     */
 
     public function run() {
-
+   
 
 
 
         DB::table( 'users' )->insert( [
-            'name' => 'The Labs',
+            'name' => 'The  project',
             'email' => 'projet12codingschool@gmail.com',
             'password' => bcrypt( 'projet.codingschool@gmail.com' ),
             'role_id' => 1,
             'created_at' => now()
-            
-        ] );
+
+        ] );     
 
 
         DB::table( 'users' )->insert( [
@@ -65,3 +65,4 @@ class UserSeeder extends Seeder {
         ] );
     }
 }
+ 

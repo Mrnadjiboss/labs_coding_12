@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Footer;
 use App\Http\Controllers\Controller;
+use App\Menu;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use App\Logo;
+use App\Mail\Welcome;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -29,7 +34,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/profil';
 
     /**
      * Create a new controller instance.
@@ -64,10 +69,25 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $users = User::all();
+        if (count($users)== 0) {
+            $roleId = 1;
+        } else {
+            $roleId = 4;
+        }
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'role_id' => $roleId,
         ]);
+        Mail::to($user->email)->send(new Welcome($data));
+        return $user;
+    }
+    public function showRegistrationForm() {
+        $footer = Footer::first();
+        $logo = Logo::first();
+        $menus = Menu::first();
+        return view( 'auth.register', compact( 'menus','logo','footer' ) );
     }
 }

@@ -22,7 +22,7 @@ class CategorieTableSeeder extends Seeder {
         DB::table( 'categories' )->insert( [
             'name' => 'Animaux',
         ] ); 
-        
+
         // DB::table( 'categories' )->insert( [
         //     'name' => 'Animaux',  
         // ] );
@@ -34,4 +34,5 @@ class CategorieTableSeeder extends Seeder {
             'name' => 'Business',
         ] );
     }
-}
+}        
+       
