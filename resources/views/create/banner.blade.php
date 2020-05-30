@@ -21,7 +21,7 @@
                     <!-- Collapse buttons -->
                     <div>
                         <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Cliquez ici pour Choisir une Image
+                        Click here to choose an image
                         </a>
                     </div>
                     <!-- / Collapse buttons -->
@@ -36,7 +36,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- / Collapsible element -->
+                    
+
+
+
+
+
+
+
 
                     
                     <!-- Grid column -->

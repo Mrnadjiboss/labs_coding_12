@@ -4,7 +4,7 @@
         <section class="section card mb-5">
             <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create article</h2>
             <p class="text-center">Author : {{Auth::user()->name}}</p>
-            <h4 class="text-center my-4">Ps: Pour les tags et catégories vous pouvez en choisir plusieurs en faisant ctrl+click </h4>
+            <h4 class="text-center my-4">Ps:for tags and categories you can choose multiple ones by holding ctrl+click </h4>
             <div class="row">
                 <div class="col-md-12 mb-md-0 mb-5">
                     <form id="contact-form" class="container" action='{{ route('article.store') }}' method="post" enctype="multipart/form-data">
