@@ -87,6 +87,7 @@
                         <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ route('register') }}">S'inscrire</a></li>
                         @endif
                         @endauth
+                        
                         @endif
                         <li class="nav-item dropdown">
                             {{-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"

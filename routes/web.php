@@ -27,7 +27,7 @@ Route::get('/admin', function () {
     $menus = Menu::first();
     
     return view('backoffice.admin',compact('menus','logo'));
-});
+})->middleware('isMembre');
 Route::get('/contact', 'PageController@contact');
 Route::get('/blog-post/{id}', 'PageController@blogpost');
 

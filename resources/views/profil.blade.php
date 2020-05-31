@@ -33,7 +33,13 @@
 
                     @endif
                     <h2>hello <span class="text-warning">{{Auth::user()->name}}</span> , you are connected</h2>
-                      
+                    <ul>
+                        <li class="list-style-none">role 1: webmaster</li>
+                        <li class="list-style-none">role 2: admin </li>
+                        <li class="list-style-none">role 3: redacteur </li>
+                        <li class="list-style-none">role 4: membre </li>
+                    </ul>
+                      <h2> your role is  : role {{Auth::user()->role_id}}</h2>
                 </div>
             </div>
         </div>
