@@ -16,9 +16,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/services', 'PageController@services');
 Route::get('/blog', 'PageController@blog');
 Route::get('/', 'PageController@acceuil');
+
+
+Route::get('/admin', function () {
+    $logo = Logo::first();
+    $menus = Menu::first();
+    
+    return view('backoffice.admin',compact('menus','logo'));
+});
 Route::get('/contact', 'PageController@contact');
 Route::get('/blog-post/{id}', 'PageController@blogpost');
 
@@ -27,37 +36,32 @@ Auth::routes();
 
 Route::get('/profil', 'HomeController@index')->name('home');
 
-Route::get('/admin', function () {
-    $logo = Logo::first();
-    $menus = Menu::first();
-    
-    return view('backoffice.admin',compact('menus','logo'));
-});
+
 
 // Route::get('/welcome', function () {
-//     return view('backoffice2.admin',compact('menus','logo'));
+//     return view('backoffice2.user1',compact('user1'));
 // });
 
 Route::resource('/menu','MenuController');
-Route::resource('/banner','BannercarController');
-Route::resource('/slogan','SloganController');
 Route::resource('/logo','LogoController');
-
-Route::resource('/presentation','PresentationController');
-Route::resource('/titre','TitreController');
-Route::resource('/testimonial','TestimonialController');
-Route::resource('/service','ServiceController');
 
 Route::resource('/ready','ReadyController');
 Route::resource('/contactinfo','ContactController');
 Route::resource('/team','TeamController');
+Route::resource('/presentation','PresentationController');
+Route::resource('/titre','TitreController');
+Route::resource('/testimonial','TestimonialController');
+Route::resource('/service','ServiceController');
+Route::resource('/banner','BannercarController');
+Route::resource('/slogan','SloganController');
+
 
 Route::resource('/serviceprim','ServiceprimController');
 Route::resource('/footer','FooterController');
 Route::resource('/article','ArticleController');
 
 Route::get('/search', 'HtmlController@search');
+Route::resource('/newsletter','NewsletterController');
 Route::post('/blog-post/{id}','CommentaireController@store');
 
-// newsletter
-Route::resource('/newsletter','NewsletterController');
+

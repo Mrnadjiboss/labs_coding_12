@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <section class="section card mb-5">
-            <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Edit Services</h2>
+            <h2 class="btn btn-outline-warning btn-lg">Edit Services</h2>
             <div class="row">
 
                 <div class="col-md-12 mb-md-0 mb-5">
@@ -48,7 +48,7 @@
                             </div>
                 </div>
                 <div class="text-center">
-                <button type="submit" class="btn blue-gradient text-center">Edit</button>
+                <button type="submit" class="btn btn-outline-warning text-center">Edit</button>
                 </div>
             </form>
             </div>
@@ -65,7 +65,7 @@
 
 
 
-    
+
     <script type="text/javascript">    
         function afficher(X) {
         I = X.selectedIndex ;        

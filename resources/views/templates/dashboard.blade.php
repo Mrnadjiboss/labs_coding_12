@@ -174,19 +174,19 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="/">{{$menus->lien1}}</a></li>
-                        <li><a class="nav-link" href="/services">{{$menus->lien2}}</a></li>
-                        <li><a class="nav-link" href="/blog">{{$menus->lien3}}</a></li>
-                        <li><a class="nav-link" href="/contact">{{$menus->lien4}}</a></li>
+                        <li><a class="nav- btn-lg btn-outline-warning" href="/">{{$menus->lien2}}</a></li>
+                        <li><a class="nav- btn-lg btn-outline-warning" href="/services">{{$menus->lien1}}</a></li>
+                        <li><a class="nav- btn-lg btn-outline-warning" href="/blog">{{$menus->lien3}}</a></li>
+                        <li><a class="nav- btn-lg   btn-outline-warning" href="/contact">{{$menus->lien4}}</a></li>
                         @if (Route::has('login'))
                         @auth
-                        <li><a class="nav-link" href="{{ url('/profil') }}">Profil</a></li>
-                        <li><a class="nav-link" href="{{ url('/admin') }}">Admin</a></li>
+                        <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ url('/profil') }}">Profil</a></li>
+                        <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ url('/admin') }}"><span class="text-dark">ADMIN BACKOFFICE !</span> </a></li>
                         @else
-                        <li><a class="nav-link" href="{{ route('login') }}">connection</a></li>
+                        <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ route('login') }}">connection</a></li>
 
                         @if (Route::has('register'))
-                        <li><a class="nav-link" href="{{ route('register') }}">S'inscrire</a></li>
+                        <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ route('register') }}">S'inscrire</a></li>
                         @endif
                         @endauth
                         @endif

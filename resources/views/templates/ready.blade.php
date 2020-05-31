@@ -1,7 +1,7 @@
 	<!-- Promotion section -->
 	<div class="promotion-section">
 		<div class="container">
-			<div class="row">
+			<div class="row  bg-warning">
 				<div class="col-md-9">
 					<h2>{{$ready->title}}</h2>
 					<p>{{$ready->subtitle}}</p>
@@ -13,5 +13,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>   
 	<!-- Promotion section end-->
