@@ -130,4 +130,9 @@ class TeamController extends Controller {
         $team->delete();
         return redirect()->back();
     }
+
+    public function __construct() {
+        $this->middleware('isMembre');
+        
+    }
 }

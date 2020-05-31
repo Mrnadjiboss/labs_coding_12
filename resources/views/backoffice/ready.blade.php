@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         <section class="section card mb-5">
-            <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Edit Ready mini home banner</h2>
+            <h2 class="h1-responsive text-warning">Edit Ready mini home banner</h2>
             <div class="row">
 
                 <div class="col-md-12 mb-md-0 mb-5">
@@ -32,8 +32,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Editer</button>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <div class="text-center bg-warning">
+                            <button type="submit" class="btn btn-outline-dark btn-lg text-center">Edit</button>
                         </div>
                     </form>
                 </div>

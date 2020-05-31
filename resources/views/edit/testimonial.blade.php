@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid bg-light">
     <section class="section card mb-5">
-        <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Testimonials</h2>
+        <h2 class="h1-responsive  text-warning my-4">edit Testimonials</h2>
         <div class="row">
             <div class="col-md-12 mb-md-0 mb-5">
                 <form id="contact-form" class="container"
@@ -54,7 +54,7 @@
                     
                      <!-- Collapse buttons -->
                      <div>
-                        <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-lg btn-outline-warning" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Cliquez ici si vous voulez changer l'image
                         </a>
                     </div>
@@ -75,7 +75,7 @@
                     
                     <!-- Grid column -->
                     <div class="text-center">
-                        <button type="submit" class="btn blue-gradient text-center">Editer</button>
+                        <button type="submit" class="btn btn-lg btn-outline-warning text-center">Edit</button>
                     </div>
                     <div class="status"></div>
                 </form>

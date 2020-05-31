@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid bg-light">
         <section class="section card mb-5">
-            <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Edit article</h2>
+            <h2 class="h1-responsive text-warning">Edit article</h2>
             <p class="text-center text-warning">Auteur : {{$article->user->name}}</p>
             
             <div class="row">
@@ -46,7 +46,7 @@
                                         <option {{$tag->id == $piv[0]->tag_id || $tag->id == $piv[1]->tag_id || $tag->id == $piv[2]->tag_id || $tag->id == $piv[3]->tag_id || $tag->id == $piv[4]->tag_id || $tag->id == $piv[5]->tag_id ? "selected" : ""}} value='{{$tag->id}}'>
                                             {{$tag->name}}
                                         </option>
-                                        
+
                                         @elseif(isset($piv[4]))
                                         <option {{$tag->id == $piv[0]->tag_id || $tag->id == $piv[1]->tag_id || $tag->id == $piv[2]->tag_id  || $tag->id == $piv[3]->tag_id || $tag->id == $piv[4]->tag_id ? "selected" : ""}} value='{{$tag->id}}'>
                                             {{$tag->name}}
@@ -130,7 +130,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="btn btn-lg btn-outline-warning " data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 Click here if you wanna change the image
                                 </a>
                             </div>
@@ -148,7 +148,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Edit</button>
+                            <button type="submit" class="btn btn-lg btn-outline-warning text-center">Edit</button>
                         </div>
                     </form>
                 </div>

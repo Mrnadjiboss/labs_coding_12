@@ -22,6 +22,9 @@ class ArticleController extends Controller {
     *
     * @return \Illuminate\Http\Response
     */
+    public function __construct() {
+        $this->middleware('isMembre');
+    }
 
     public function index() {
         $articles = Article::all();

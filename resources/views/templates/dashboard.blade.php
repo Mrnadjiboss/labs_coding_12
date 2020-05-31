@@ -53,118 +53,16 @@
         <li>
             <ul>
                 <li>
-                    <a href="/admin" class="collapsible-header waves-effect list-style-none text-dark">
-                        <i class="w-fa fas fa-tools text-info"></i> Admin Dashboard
+                    <a href="/admin" class="btn  text-dark">
+                        <i class="w-fa fas fa-menu text-info"></i> Admin Dashboard
                     </a>
                 </li>
             </ul>
-            <ul class="list-unstyled">
-                <li>
-                    <a href="/titre" class="collapsible-header waves-effect list-style-none text-dark">
-                        <i class="w-fa fas fa-heading green-text"></i> Titre section
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="/menu" class="collapsible-header waves-effect list-style-none text-dark">
-                        <i class="w-fa fas fa-bars text-info"></i> Menu
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <ul class="collapsible collapsible-accordion">
-              <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> {{$menus->lien1}}<i
-                    class="fas fa-angle-down rotate-icon"></i></a>
-                <div class="collapsible-body">
-                  <ul class="list-unstyled">
-                    <li>
-                        <a href="/banner" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-window-maximize green-text"></i>Banner
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/presentation" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-photo-video text-info"></i>présentation
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/testimonial" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-comments green-text"></i>Testimonial
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/service" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-concierge-bell text-info"></i>Service
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/team" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-users green-text"></i>Team
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/ready" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-thumbs-up text-info"></i>Mini banner home Ready
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contactinfo" class="collapsible-header waves-effect">
-                            <i class="w-fa fas fa-phone green-text"></i>Contact
-                        </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> {{$menus->lien2}}<i
-                      class="fas fa-angle-down rotate-icon"></i></a>
-                  <div class="collapsible-body">
-                    <ul class="list-unstyled">
-                      <li>
-                          <a href="/service" class="collapsible-header waves-effect">
-                              <i class="w-fa fas fa-concierge-bell text-info"></i>Service
-                          </a>
-                      </li>
-                      <li>
-                        <a href="/serviceprim" class="collapsible-header waves-effect">
-                            <i class="w-fa fab fa-blogger-b text-info"></i>Serviceprim btn
-                        </a>
-                    </li>
-                    </ul>
-                  </div>
-                </li>
-            </ul>
-            <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> {{$menus->lien3}}<i
-                      class="fas fa-angle-down rotate-icon"></i></a>
-                  <div class="collapsible-body">
-                    <ul class="list-unstyled">
-                      <li>
-                          <a href="/article" class="collapsible-header waves-effect">
-                              <i class="w-fa fas fa-concierge-bell green-text"></i>Blog
-                          </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-            </ul>
-            <ul class="mt-2">
-                <li>
-                    <a href="/footer" class="collapsible-header waves-effect list-style-none text-dark">
-                        <i class="w-fa fas fa-shoe-prints green-text"></i>&nbsp; Footer
-                    </a>
-                </li>
-            </ul>
-          </li>
-        <!-- Side navigation links -->
-
-    </ul>
+            
+           
     <div class="sidenav-bg mask-strong"></div>
 </div>
-<!-- Sidebar navigation -->
+
 
         <!-- Navbar -->
         <nav class="navbar header-nav navbar-expand-lg">
@@ -181,7 +79,7 @@
                         @if (Route::has('login'))
                         @auth
                         <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ url('/profil') }}">Profil</a></li>
-                        <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ url('/admin') }}"><span class="text-dark">ADMIN BACKOFFICE !</span> </a></li>
+                        <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ url('/admin') }} "><span class="text-dark">ADMIN BACKOFFICE !</span> </a></li>
                         @else
                         <li><a class="nav-link nav- btn-lg btn-outline-warning" href="{{ route('login') }}">connection</a></li>
 
@@ -191,17 +89,17 @@
                         @endauth
                         @endif
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            {{-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
+                            </a> --}}
 
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
-
+     
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST"
                                     style="display: none;">
                                     @csrf

@@ -12,7 +12,10 @@
 <hr class="bg-warning">
 <br>
 <br>
-<div class="container mt-3  bg-warning">
+<hr class="bg-warning">
+<hr class="bg-warning">
+<hr class="bg-warning">
+<div class="container-fluid   bg-warning">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -23,7 +26,7 @@
                         @csrf
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
+ 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
@@ -88,7 +91,14 @@
 <br>
 <br>
 <br>
-<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 @endsection
 @section('footer')
    @include('templates.footer')

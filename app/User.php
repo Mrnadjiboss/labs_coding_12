@@ -45,4 +45,22 @@ class User extends Authenticatable
     public function commentaires(){
         return $this->hasMany(Commentaire::class);
     }
+
+    public function isAdmin()
+    {
+        return ($this->role_id == 1);
+
+    }
+    public function isWebmaster()
+    {
+        return ($this->role_id == 2);
+    }
+    public function isRedacteur()
+    {
+        return ($this->role_id == 3);
+    }
+    public function isMembre()
+    {
+        return ($this->role_id == 4);
+    }
 }
