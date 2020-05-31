@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <section class="section card mb-5">
-            <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Services</h2>
+            <h2 class="h1-responsive text-warning">Create Services</h2>
             <div class="row">
                 @if ($errors->any())
                 <div class='alert alert-danger'>
@@ -51,6 +51,10 @@
             </div>
         </section>
     </div>
+
+
+
+
     <script type="text/javascript">    
         function afficher(X) {
         I = X.selectedIndex ;        

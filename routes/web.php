@@ -28,7 +28,10 @@ Auth::routes();
 Route::get('/profil', 'HomeController@index')->name('home');
 
 Route::get('/admin', function () {
-      return view('backoffice.user1',compact('menus'));
+    $logo = Logo::first();
+    $menus = Menu::first();
+    
+    return view('backoffice.admin',compact('menus','logo'));
 });
 
 // Route::get('/welcome', function () {

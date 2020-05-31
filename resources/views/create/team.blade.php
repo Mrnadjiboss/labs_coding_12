@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <section class="section card mb-5">
-            <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Team Mate</h2>
+            <h2 class="h1-responsive text warning text-center">Create Team Mate</h2>
             <div class="row">
                 @if ($errors->any())
                 <div class='alert alert-danger'>
@@ -38,7 +38,7 @@
                             </div>
                             <!-- Collapse buttons -->
                     <div>
-                        <a class="btn aqua-gradient" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <a class="btn btn-warning" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Click here if you wanna change the image
                         </a>
                     </div>
@@ -56,7 +56,7 @@
                     </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Create</button>
+                            <button type="submit" class="btn btn-lg btn-outline-warning text-center">Create</button>
                         </div>
                     </form>
                 </div>

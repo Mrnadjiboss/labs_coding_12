@@ -1,6 +1,6 @@
 @extends('templates.dashboard')
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <section class="section card mb-5">
             <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Edit Ready mini home banner</h2>
             <div class="row">

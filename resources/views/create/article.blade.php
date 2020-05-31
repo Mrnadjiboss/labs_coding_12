@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <section class="section card mb-5">
-            <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create article</h2>
+            <h2 class="h1-responsive text-warning">Create article</h2>
             <p class="text-center">Author : {{Auth::user()->name}}</p>
             <h4 class="text-center my-4">Ps:for tags and categories you can choose multiple ones by holding ctrl+click </h4>
             <div class="row">

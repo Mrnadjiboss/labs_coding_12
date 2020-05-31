@@ -3,14 +3,18 @@
 @section('content')
     <div class="container">
         <div class="text-center">
-            <h1 class="green-text">Articles</h1>
-            <h6>Ps: pour publier un article vous devez check la checkbox en mode Webmaster (dans edit)</h6>
-            <a class="btn-floating btn-lg dusty-grass-gradient text-white" href='article/create'>
-                <i class="fas fa-plus text-white"></i>
+            <h1 class="text-outline-warning">Articles</h1>
+            <h6 class="h3 text-warning">to publish an article you have to check as webmaster</h6>
+            <a class="btn btn-outline-warning text-white" href='article/create'>
+                <i class="fas fa-plus text-dark">create</i>
             </a>
         </div>
-        <div class="row">
+        <div class="row bg-warning">
+            
             @foreach ($articles->sortByDesc('created_at') as $article)
+
+
+
             <div class="col-md-4 mb-4">
                 <!-- Card -->
                 <div class="card profile-card">

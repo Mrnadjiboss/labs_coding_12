@@ -2,9 +2,9 @@
 
 
 @section('content')
-<div class="container-fluid">
+<div class="container">
     <section class="section card mb-5">
-        <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Testimonials</h2>
+        <h2 class="h1-responsive text-warning text-center my-4">Create Testimonials</h2>
         <div class="row">
 
             
@@ -67,7 +67,7 @@
                     
                     <!-- Grid column -->
                     <div class="text-center">
-                        <button type="submit" class="btn blue-gradient text-center">Create</button>
+                        <button type="submit" class="btn btn-lg btn-outline-warning text-center">Create</button>
                     </div>
                     <div class="status"></div>
                 </form>

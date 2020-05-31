@@ -15,9 +15,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/titre" class="btn-floating btn-lg green accent-2"><i
+                            <a href="/titre" class="btn btn-lg green accent-2"><i
                                     class="fas fa-heading" aria-hidden="true"></i></a>
-                          <h5>Titre Section</h5>
+                          <h5 class="h2 text-warning">Title Section</h5>
                         </div>
                     </div>
                     <!-- Card Data -->
@@ -36,9 +36,9 @@
                   <div class="row mt-3 mb-3">
 
                       <div class="col-12 text-center">
-                          <a href="/menu" class="btn-floating btn-lg blue accent-2"><i
+                          <a href="/menu" class="btn btn-lg blue accent-2"><i
                                   class="fas fa-bars" aria-hidden="true"></i></a>
-                          <h5>Menu</h5>
+                          <h5 class="h2 text-warning">Menu section</h5>
                       </div>
                   </div>
                   <!-- Card Data -->
@@ -57,9 +57,9 @@
                   <div class="row mt-3 mb-3">
 
                       <div class="col-12 text-center">
-                          <a href="/banner" class="btn-floating btn-lg green accent-2"><i
+                          <a href="/banner" class="btn btn-lg green accent-2"><i
                                   class="fas fa-window-maximize" aria-hidden="true"></i></a>
-                          <h5>Banner</h5>
+                          <h5 class="h2 text-warning">Banner section</h5>
                       </div>
                   </div>
                   <!-- Card Data -->
@@ -78,9 +78,9 @@
                   <div class="row mt-3 mb-3">
 
                       <div class="col-12 text-center">
-                          <a href="/presentation" class="btn-floating btn-lg blue accent-2"><i
+                          <a href="/presentation" class="btn btn-lg blue accent-2"><i
                                   class="fas fa-photo-video" aria-hidden="true"></i></a>
-                          <h5>Présentation</h5>
+                          <h5 class="h2 text-warning">Presentation section</h5>
                       </div>
                   </div>
                   <!-- Card Data -->
@@ -96,9 +96,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/testimonial" class="btn-floating btn-lg green accent-2"><i
+                            <a href="/testimonial" class="btn btn-lg green accent-2"><i
                                     class="fas fa-comments" aria-hidden="true"></i></a>
-                          <h5>Testimonial</h5>
+                          <h5 class="h2 text-warning">Testimonial section</h5>
                         </div>
                     </div>
                     <!-- Card Data -->
@@ -114,9 +114,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/service" class="btn-floating btn-lg blue accent-2"><i
+                            <a href="/service" class="btn btn-lg blue accent-2"><i
                                     class="fas fa-concierge-bell" aria-hidden="true"></i></a>
-                          <h5>Service</h5>
+                          <h5 class="h2 text-warning">Services section</h5>
                         </div>
                     </div>
                     <!-- Card Data -->
@@ -132,9 +132,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/team" class="btn-floating btn-lg green accent-2"><i
+                            <a href="/team" class="btn btn-lg green accent-2"><i
                                     class="fas fa-users" aria-hidden="true"></i></a>
-                          <h5>Team</h5>
+                          <h5 class="h2 text-warning">Team section</h5>
                         </div>
                     </div>
                     <!-- Card Data -->
@@ -150,9 +150,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/ready" class="btn-floating btn-lg blue accent-2"><i
+                            <a href="/ready" class="btn btn-lg blue accent-2"><i
                                     class="fas fa-thumbs-up" aria-hidden="true"></i></a>
-                          <h5>Ready home mini banner</h5>
+                          <h5 class="h2 text-warning">Ready home mini banner</h5>
                         </div>
                     </div>
                     <!-- Card Data -->
@@ -168,9 +168,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/contactinfo" class="btn-floating btn-lg green accent-2"><i
+                            <a href="/contactinfo" class="btn btn-lg green accent-2"><i
                                     class="fas fa-phone" aria-hidden="true"></i></a>
-                          <h5>Contact info</h5>
+                          <h5 class="h2 text-warning">Contact info</h5>
                         </div>
                     </div>
                 </div>
@@ -185,9 +185,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/serviceprim" class="btn-floating btn-lg blue accent-2"><i
+                            <a href="/serviceprim" class="btn btn-lg blue accent-2"><i
                                     class="fab fa-blogger-b" aria-hidden="true"></i></a>
-                          <h5>Services primés btn</h5>
+                          <h5 class="h2 text-warning">Services prime section</h5>
                         </div>
                     </div>
                 </div>
@@ -202,9 +202,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/article" class="btn-floating btn-lg green accent-2"><i
+                            <a href="/article" class="btn btn-lg green accent-2"><i
                                 class="far fa-newspaper" aria-hidden="true"></i></a>
-                          <h5>Blog</h5>
+                          <h5 class="h2 text-warning">Blog section</h5>
                         </div>
                     </div>
                 </div>
@@ -219,9 +219,9 @@
                     <!-- Card Data -->
                     <div class="row mt-3 mb-3">
                         <div class="col-12 text-center">
-                            <a href="/footer" class="btn-floating btn-lg green accent-2"><i
+                            <a href="/footer" class="btn btn-lg green accent-2"><i
                                     class="fas fa-shoe-prints" aria-hidden="true"></i></a>
-                          <h5>Footer</h5>
+                          <h5 class="h2 text-warning">Footer section</h5>
                         </div>
                     </div>
                 </div>

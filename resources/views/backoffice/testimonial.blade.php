@@ -3,9 +3,9 @@
     <div class="container">
         <div class="text-center ">
             <h1 class="green-text mt-4">Testimonials</h1>
-            <p>PS : les temoignages sont trier par ordre de creation (du plus recent au plus ancien)</p>
-            <a class="btn-floating btn-lg dusty-grass-gradient text-white" href="testimonial/create">
-                <i class="fas fa-plus text-white"></i>
+            <p class="h2 text-warning">PS : testimonials are arranged in order of creation from new to old </p>
+            <a class="btn btn-lg btn-outline-warning text-warning" href="testimonial/create">
+                <i class="fas fa-plus text-dark"> create</i>
             </a>
         </div>
         <div class="row mt-5">
@@ -33,8 +33,8 @@
                             <form action='testimonial/{{$testimonial->id}}' method='POST'>
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="btn-floating border-0 young-passion-gradient text-white"><i
-                                        class="fas fa-trash-alt text-white"></i>
+                                <button type="submit" class="btn- border-0 young-passion-gradient text-white"><i
+                                        class="fas fa-trash-alt text-dark"></i>
                                 </button>
                             </form>
                         </div>

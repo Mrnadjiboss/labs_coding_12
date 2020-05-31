@@ -9,7 +9,7 @@
     </div>
     @enderror
     <section class="section card mb-5">
-        <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Create Banner</h2>
+        <h2 class="h1-responsive text-warning">Create Banner</h2>
         <div class="row">
 
             <!--Grid column-->

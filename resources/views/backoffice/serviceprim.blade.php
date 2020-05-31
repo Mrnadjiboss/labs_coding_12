@@ -1,6 +1,6 @@
 @extends('templates.dashboard')
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <section class="section card mb-5">
             <h2 class="h1-responsive font-weight-bold green-text text-center my-4">Edit Services primés btn</h2>
             <div class="row">
@@ -14,12 +14,12 @@
                                 <div class="md-form mb-0">
                                     <input type="text" value="{{$serviceprim->btn}}" id="email" name="btn"
                                         class="form-control">
-                                    <label for="email" class="">Text du btn </label>
+                                    <label for="email" class="">button text </label>
                                 </div>
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn blue-gradient text-center">Editer</button>
+                            <button type="submit" class="btn blue-gradient text-center">Edit</button>
                         </div>
                     </form>
                 </div>
