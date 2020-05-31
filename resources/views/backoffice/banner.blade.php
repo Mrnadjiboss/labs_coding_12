@@ -67,10 +67,12 @@
                         <input size="auto" type="text" class="form-control" value="{{$slogan->title}}" name="title">
                     </div>
                     <div class="text-left">
-                        <button type="submit" class="btn blue-gradient text-center">Editer</button>
+                        <button type="submit" class="btn blue-gradient  text-center">Editer</button>
                     </div>
                 </form>
-            </div>
+            </div> 
         </div>
-    </div>
-@endsection
+    </div>   
+@endsection    
+
+
