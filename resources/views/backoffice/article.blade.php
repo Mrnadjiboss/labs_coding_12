@@ -10,7 +10,7 @@
             </a>
         </div>
         <div class="row bg-warning">
-            
+
             @foreach ($articles->sortByDesc('created_at') as $article)
 
 
@@ -19,11 +19,11 @@
                 <!-- Card -->
                 <div class="card profile-card">
                   <!-- Avatar -->
-                  <div class="white d-flex justify-content-center align-items-center border border-success p-5 mb-4">
+                  <div class="bg-warning  d-block justify-content-center align-items-center border border-warning p-5 mb-4">
                     @if (Storage::disk('public')->has($article->img_article))
                         <img src={{asset('storage/'.$article->img_article)}} alt="">
                     @else
-                        <img src="{{$article->img_article}}" alt="">
+                        <img src="{{$article->img_article}}"  class="img-fluid" alt="">
                     @endif
                   </div>
         
@@ -31,41 +31,41 @@
         
                     <!-- Name -->
                     @if ($article->accept == "unchecked")
-                        <h6 class="text-danger">L'article n'est pas encore publié</h6>
+                        <h6 class="text-danger">not published yet</h6>
                     @else
-                        <h6 class="text-success">L'article est publié</h6>
+                        <h6 class="text-success">the article has been published</h6>
                     @endif
-                    <h3 class="mb-3 font-weight-bold text-info"><strong>{{$article->titre}}</strong></h3>
+                    <h3 class="mb-3 font-weight-bold text-info text-warning"><strong>{{$article->titre}}</strong></h3>
                     <div class="d-flex">
                         <h6>{{date('d M Y', strtotime($article->date)) }} &nbsp; </h6>
                         <h6> {{$article->user->name}}</h6>
                     </div>
-                    <h6> Catégories:
+                    <h6 class="bg-warning"> Catégories:
                         @foreach ($article->categories as $cate)
                         {{$cate->name}}  
                         @endforeach
                     </h6>
-                    <h6> Tags :
+                    <h6 class="bg-warning"> Tags :
                         @foreach ($article->tags as $tag)
                         {{$tag->name}}  
                         @endforeach
                     </h6>
                     <p class="mt-4 text-muted">{{\Str::limit($article->text, 70, $end='...') }}</p>
                     <div class="row">
-                        <div class="col-6 text-center">
+                        <div class="col-12 text-center ">
                             <form action='article/{{$article->id}}/edit' method="get" class="text-center mb-3">
                                 @csrf
-                                <button type="submit" class="btn-floating border-0 btn-lg sunny-morning-gradient text-white">
-                                    <i class="fas fa-edit text-white"></i>
-                                </button>
+                                <button type="submit" class="btn btn-outline-warning text-dark">edit<i
+                                    class="fas fa-edit-alt text-dark"></i>
+                            </button>
                             </form>
                         </div>
-                        <div class="col-6 text-center">
+                        <div class="col-12 text-center">
                             <form action='article/{{$article->id}}' method='POST'>
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="btn-floating border-0 btn-lg young-passion-gradient text-white"><i
-                                        class="fas fa-trash-alt text-white"></i>
+                                <button type="submit" class="btn btn-outline-warning text-white"><i
+                                        class="fas fa-trash-alt text-dark"></i>
                                 </button>
                             </form>
                         </div>
