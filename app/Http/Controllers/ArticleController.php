@@ -6,15 +6,15 @@ use App\Article;
 use App\Author;
 use App\Categorie;
 use App\CategorieArticle;
+use App\Menu;
 use App\Events\ArticlePublierEvent;
 use App\Logo;
-use App\Menu;
 use App\Tag;
 use App\TagArticle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
-use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller {
     /**
@@ -64,12 +64,12 @@ class ArticleController extends Controller {
             'tags'=>'required',
             'cate'=>'required',
         ], [
-            'img.required'=>'veuillez selectionner une image.',
-            'text.required'=>'veuillez remplir le champ text.',
-            'date.required'=>'veuillez remplir le champ date.',
-            'titre.required'=>'veuillez remplir le champ titre.',
-            'tags.required'=>'veuillez remplir le champ tags.',
-            'cate.required'=>'veuillez remplir le champ categories.',
+            'img.required'=>'please select an image.',
+            'text.required'=>'please fill in  text.',
+            'date.required'=>'please fill  in  date.',
+            'titre.required'=>'please fill  in  titre.',
+            'tags.required'=>'please fill  in  tags.',
+            'cate.required'=>'please fill  in  category.',
         ] );
         $img = $request->file( 'img' );
         $newName = Storage::disk( 'public' )->put( '', $img );

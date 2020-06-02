@@ -9,7 +9,9 @@ class Commentaire extends Model
     public function user(){
         return $this->belongsTo(User::class);
     }
-    public function article(){
+    public function article(){ 
         return $this->belongsTo(Article::class);
     }
 }
+          
+

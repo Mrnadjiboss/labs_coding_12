@@ -1,8 +1,10 @@
 @extends('templates.dashboard')
 @section('content')
+
 <div class="container-fluid">
+
     @if ($errors->any())
-    <div class='alert alert-danger'>
+    <div class='alert alert-warning'>
     @foreach ($errors->all() as $error)
         <p>{{  $error  }}</p>
     @endforeach
@@ -10,6 +12,9 @@
     @enderror
     <section class="section card mb-5">
         <h2 class="h1-responsive text-warning">Create Banner</h2>
+
+
+            
         <div class="row">
 
             <!--Grid column-->
@@ -24,9 +29,9 @@
                         Click here to choose an image
                         </a>
                     </div>
-                    <!-- / Collapse buttons -->
+                  
                     
-                    <!-- Collapsible element -->
+                   
                     <div class="collapse" id="collapseExample">
                         <div class="row mt-3">
                             <div class="col-12">
